@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MoveControl : MonoBehaviour
@@ -13,7 +14,8 @@ public class MoveControl : MonoBehaviour
     const float groundCheckRadius = 0.2f;
     [SerializeField]  bool isGrounded;
 
-  
+    public GameObject gameOverScreen;
+    public GameObject pauseMenuScreen;
    
 
     bool jump;
@@ -23,8 +25,9 @@ public class MoveControl : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        pauseMenuScreen.SetActive(false);
         //jumpForce = 500f;
- 
+
     }
 
     void Update()
@@ -56,8 +59,22 @@ public class MoveControl : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        pauseMenuScreen.SetActive(true);
+    }
 
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        pauseMenuScreen.SetActive(false);
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
    
 }
