@@ -17,7 +17,7 @@ public class Playerpush : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.FindGameObjectWithTag("buttondrag").GetComponent<Button>().interactable = false;
+        //GameObject.FindGameObjectWithTag("buttondrag").GetComponent<Button>().interactable = false;
         
     }
 
