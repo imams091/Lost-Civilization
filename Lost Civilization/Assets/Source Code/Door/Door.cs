@@ -21,8 +21,9 @@ public class Door : MonoBehaviour
 	}
 
 	public void Open(){
-		animator.SetInteger ("AnimState", 1); //animasi pintu terbuka
-	}
+        //animator.SetInteger ("AnimState", 1); //animasi pintu terbuka
+        GetComponent<Collider2D>().enabled = false;
+    }
 
 	public void Close(){
 		StartCoroutine (CloseNow ()); //menjalankan coroutine utk delay execution
@@ -30,6 +31,6 @@ public class Door : MonoBehaviour
 
 	private IEnumerator CloseNow(){
 		yield return new WaitForSeconds(closeDelay); //fungsi delay
-		animator.SetInteger ("AnimState", 2); //animasi pintu tertutup
+		//animator.SetInteger ("AnimState", 2); //animasi pintu tertutup
 	}
 }

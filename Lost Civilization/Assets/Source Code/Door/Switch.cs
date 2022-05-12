@@ -14,7 +14,7 @@ public class Switch : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D target){
 		//animator.SetInteger ("AnimState", 1); //animasi switch ketekan
 		down = true; //set boolean true
-
+        Debug.Log("pintu terbuka");
 		foreach (DoorTrigger trigger in doorTriggers) { //cari semua doortrigger yg didaftarin pada array
 			if(trigger != null) //kalo array tidak kosong
 				trigger.Toggle(true); //jalankan fungsi toggle pada doortrigger
