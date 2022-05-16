@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 256041222}
   - component: {fileID: 256041226}
   - component: {fileID: 256041228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: box
   m_TagString: Pushable
   m_Icon: {fileID: 0}
@@ -1852,14 +1852,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f06767d18ac2d4484b2e05299b5a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundcheckCollider: {fileID: 1551711913}
+  groundCheckCollider: {fileID: 1551711913}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  jumpForce: 320
   isGrounded: 0
   gameOverScreen: {fileID: 0}
   pauseMenuScreen: {fileID: 171133697}
+  totalJumps: 1
+  jumpPower: 7
 --- !u!114 &480388680
 MonoBehaviour:
   m_ObjectHideFlags: 0

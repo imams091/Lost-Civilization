@@ -10,13 +10,13 @@ public class FSM_enemy : MonoBehaviour
     private Transform player;
     private Vector2 currentpos;
    
-    Hero hr;
+  //  Hero hr;
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentpos = GetComponent<Transform>().position;
-        hr = GameObject.Find("MainChar").GetComponent<Hero>();
+       // hr = GameObject.Find("MainChar").GetComponent<Hero>();
     }
     // Update is called once per frame
     void Update()
