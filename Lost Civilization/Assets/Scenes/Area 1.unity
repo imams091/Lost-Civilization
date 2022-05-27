@@ -3309,6 +3309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959425706}
   - component: {fileID: 959425707}
+  - component: {fileID: 959425708}
   m_Layer: 0
   m_Name: enemy_sprite
   m_TagString: Untagged
@@ -3381,6 +3382,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &959425708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959425705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff13ce28bbfe964c989df886286a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teamIndex: 2
+  maxHealth: 100
 --- !u!1 &1020643025
 GameObject:
   m_ObjectHideFlags: 0
@@ -16433,7 +16448,7 @@ GameObject:
   - component: {fileID: 1516350948}
   - component: {fileID: 1516350947}
   - component: {fileID: 1516350950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: STRAW_DUMMY_VER_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16453,6 +16468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _teamIndex: 2
+  maxHealth: 100
 --- !u!212 &1516350948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16512,7 +16528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516350946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.94, y: -0.95, z: 0}
+  m_LocalPosition: {x: -15.03, y: -3.01, z: 0}
   m_LocalScale: {x: 0.5624, y: 0.5624, z: 0.5624}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16531,7 +16547,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19602996, y: 0}
+  m_Offset: {x: -0.087712765, y: 0.11133218}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16542,7 +16558,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.93149173, y: 3.78}
+  m_Size: {x: 1.8221169, y: 3.5573359}
   m_EdgeRadius: 0
 --- !u!1 &1530368318
 GameObject:
@@ -19003,6 +19019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _teamIndex: 2
+  maxHealth: 100
 --- !u!61 &1869960296
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class MeleeBaseState : State
     // The attack index in the sequence of attacks
     protected int attackIndex;
 
-
+    public int attackDamage = 23;
 
     // The cached hit collider component of this attack
     protected Collider2D hitCollider;
@@ -80,6 +80,7 @@ public class MeleeBaseState : State
                     GameObject.Instantiate(HitEffectPrefab, collidersToDamage[i].transform);
                     Debug.Log("Enemy Has Taken:" + attackIndex + "Damage");
                     collidersDamaged.Add(collidersToDamage[i]);
+                    hitTeamComponent.GetComponent<TeamComponent>().TakeDamage(attackDamage);
                 }
             }
         }
