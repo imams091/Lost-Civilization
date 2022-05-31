@@ -17,9 +17,9 @@ public class ComboCharacter : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void ComboAttack()
+    void Update()
     {
-        if (meleeStateMachine.CurrentState.GetType() == typeof(IdleCombatState))
+        if (Input.GetMouseButton(0) && meleeStateMachine.CurrentState.GetType() == typeof(IdleCombatState))
         {
             meleeStateMachine.SetNextState(new GroundEntryState());
         }

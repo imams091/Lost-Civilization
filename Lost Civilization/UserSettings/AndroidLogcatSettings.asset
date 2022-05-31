@@ -12,6 +12,24 @@
             "deviceId": "xwu8b6bijvnfwcpn",
             "name": "com.unity3d.mobileremote",
             "processId": 25594,
+            "exited": true
+        },
+        {
+            "deviceId": "xwu8b6bijvnfwcpn",
+            "name": "com.Imam1818011.com.unity.template.mobile2D",
+            "processId": 9720,
+            "exited": true
+        },
+        {
+            "deviceId": "xwu8b6bijvnfwcpn",
+            "name": "com.unity3d.mobileremote",
+            "processId": 10370,
+            "exited": true
+        },
+        {
+            "deviceId": "xwu8b6bijvnfwcpn",
+            "name": "com.facebook.katana",
+            "processId": 31488,
             "exited": false
         }
     ],
@@ -65,7 +83,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "combat",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

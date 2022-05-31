@@ -25,12 +25,15 @@ public class EnemyDamage : MonoBehaviour
 
         if (maxHealth <= 0)
         {
-            Die();
+            Wafat();
         }
     }
 
-    void Die()
+    void Wafat()
     {
         Destroy(gameObject);
     }
+
 }
+   
+
