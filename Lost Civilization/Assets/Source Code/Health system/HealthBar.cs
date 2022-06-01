@@ -6,8 +6,15 @@ public class HealthBar : MonoBehaviour
     public Image fillBar;
     public float health;
 
+    Vector2 play;
+    public bool play_again;
     //100 health => 1 fill amount
     //45 health => 0.45 fill amount
+
+    private void Awake()
+    {
+        play = transform.position;
+    }
 
     public void LoseHealth(int value)
     {
@@ -27,7 +34,7 @@ public class HealthBar : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-           LoseHealth(10);
+       
     }
+
 }

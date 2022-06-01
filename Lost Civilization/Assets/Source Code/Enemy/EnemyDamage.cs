@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     public int maxHealth = 100;
+    
     // Use this for initialization
     void Start()
     {
@@ -33,6 +34,8 @@ public class EnemyDamage : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+   
 
 }
    
