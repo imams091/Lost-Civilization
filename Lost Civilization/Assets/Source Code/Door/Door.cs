@@ -21,8 +21,9 @@ public class Door : MonoBehaviour
 	}
 
 	public void Open(){
-        //animator.SetInteger ("AnimState", 1); //animasi pintu terbuka
+        animator.SetInteger ("AnimState", 1); //animasi pintu terbuka
         GetComponent<Collider2D>().enabled = false;
+        //animator.SetBool("openDoor", true);
     }
 
 	public void Close(){
