@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Pathfinding {
 	/// <summary>
-	/// Provides additional traversal information to a path request.
+	/// Provides additional traversl information to a path request.
 	/// See: turnbased (view in online documentation for working links)
 	/// </summary>
 	public interface ITraversalProvider {

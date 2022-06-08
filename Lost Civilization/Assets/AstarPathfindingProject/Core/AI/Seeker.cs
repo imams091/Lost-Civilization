@@ -15,7 +15,7 @@ namespace Pathfinding {
 	///
 	/// See: calling-pathfinding (view in online documentation for working links)
 	/// See: modifiers (view in online documentation for working links)
-	/// </summary>
+	/// </summary> 
 	[AddComponentMenu("Pathfinding/Seeker")]
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_seeker.php")]
 	public class Seeker : VersionedMonoBehaviour {
