@@ -12,6 +12,8 @@ public class PlayerCombatController : MonoBehaviour
     public Transform attackPoint;
     [SerializeField] public int attackDamage = 20;
 
+    public Analog script;
+
 
     private void Awake()
     {
@@ -28,6 +30,7 @@ public class PlayerCombatController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Attack();
+            
         }
     }
 
@@ -43,10 +46,11 @@ public class PlayerCombatController : MonoBehaviour
         }
 
         if (!isAttacking)
-            {
-                isAttacking = true;
-               
-            }
+        {
+            isAttacking = true;
+            //script.speed = 0;
+        }
+      
     }
 
     private void OnDrawGizmosSelected()

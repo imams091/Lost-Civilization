@@ -14,7 +14,7 @@ public class Analog : MonoBehaviour
     bool canDash = true;
     float direction = 1;
     float movX;
-    [SerializeField] float speed = 1;
+    [SerializeField] public float speed = 1;
     
     public Joystick joystick;
        
@@ -26,7 +26,8 @@ public class Analog : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
        animator = GetComponent<Animator>();
-        
+
+        DontDestroyOnLoad(gameObject);
         
     }
 

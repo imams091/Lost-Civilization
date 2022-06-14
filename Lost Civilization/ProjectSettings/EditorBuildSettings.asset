@@ -13,8 +13,5 @@ EditorBuildSettings:
     guid: 8bf78aacf4e81cd4b8936cf63a3648e5
   - enabled: 1
     path: Assets/Scenes/Area 1.unity
-    guid: a08e5e4d4c49fba4dbfa0d14a03c8613
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    guid: 4d19b9f13e3852a4c91ae526b1049f4d
   m_configObjects: {}
