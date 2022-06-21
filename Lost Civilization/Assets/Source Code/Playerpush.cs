@@ -37,13 +37,7 @@ public class Playerpush : MonoBehaviour
             boxx.GetComponent<boxpull>().beingPushed = true;
 
         }
-        else if (Input.GetKeyUp(KeyCode.E) || (button_drag == false))
-        {
-            
-            GameObject.FindGameObjectWithTag("Pushable").GetComponent<FixedJoint2D>().enabled = false;
-            GameObject.FindGameObjectWithTag("Pushable").GetComponent<boxpull>().beingPushed = false;
-
-        }
+       
 
       
     }

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class Timer : MonoBehaviour, IDataPersistence
 {
     [Header("Component")]
     public TextMeshProUGUI timertext;
@@ -27,6 +27,16 @@ public class Timer : MonoBehaviour
         timeFormats.Add(Timerformats.Whole, "0");
         timeFormats.Add(Timerformats.TenthDecimal, "0.0");
         timeFormats.Add(Timerformats.HundrethsDecimal, "0.00");
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.curentTime = data.currenttime;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.currenttime = this.curentTime;
     }
 
     private void Update()
