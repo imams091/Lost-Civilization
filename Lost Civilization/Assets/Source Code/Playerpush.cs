@@ -37,9 +37,13 @@ public class Playerpush : MonoBehaviour
             boxx.GetComponent<boxpull>().beingPushed = true;
 
         }
-       
+        else if (Input.GetKeyUp(KeyCode.E) || (button_drag == false) )
+        {
+            boxx.GetComponent<FixedJoint2D>().enabled = false;
+            boxx.GetComponent<boxpull>().beingPushed = false;
+        }
 
-      
+
     }
 
     public void Tekan()

@@ -27,7 +27,7 @@ public class Analog : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
        animator = GetComponent<Animator>();
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         
     }
 

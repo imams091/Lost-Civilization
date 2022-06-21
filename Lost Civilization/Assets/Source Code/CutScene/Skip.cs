@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainStory : MonoBehaviour
+public class Skip : MonoBehaviour
 {
-    private void OnEnable()
+    public void SkipToArea1()
     {
         SceneManager.LoadScene("Area 1");
+        //Time.timeScale = 1;
     }
+
+   
 }

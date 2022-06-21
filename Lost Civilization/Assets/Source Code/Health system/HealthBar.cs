@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class HealthBar : MonoBehaviour
         {
             //FindObjectOfType<Fox>().Die();
             Debug.Log("kamu mati");
+            SceneManager.LoadScene("GameOver");
         }
     }
     private void Update()
