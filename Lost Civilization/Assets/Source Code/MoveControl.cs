@@ -23,6 +23,7 @@ public class MoveControl : MonoBehaviour
     bool coyoteJump;
     bool jump;
     [SerializeField] float jumpPower = 500;
+    [SerializeField] private AudioSource jumpSfx;
 
     // Start is called before the first frame update
     void Awake()
@@ -91,7 +92,7 @@ public class MoveControl : MonoBehaviour
         {
             multipleJump = true;
             availableJumps--;
-
+            jumpSfx.Play();
             rb.velocity = Vector2.up * jumpPower;
             animator.SetBool("Jump", true);
         }

@@ -15,6 +15,7 @@ public class Analog : MonoBehaviour
     float direction = 1;
     float movX;
     [SerializeField] public float speed = 1;
+    [SerializeField] private AudioSource footstep;
     
     public Joystick joystick;
        
@@ -26,7 +27,7 @@ public class Analog : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
        animator = GetComponent<Animator>();
-
+        footstep = GetComponent<AudioSource>();
         //DontDestroyOnLoad(gameObject);
         
     }
@@ -101,6 +102,11 @@ public class Analog : MonoBehaviour
                 
         animator.SetFloat("Run", Mathf.Abs(rb.velocity.x));
         
+    }
+
+    private void Footstep()
+    {
+        footstep.Play();
     }
 
     IEnumerator Dash(float dashDuration, float dashCooldown)
