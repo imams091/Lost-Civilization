@@ -12,6 +12,10 @@ public class PlayerCombatController : MonoBehaviour
     public Transform attackPoint;
     [SerializeField] public int attackDamage = 20;
 
+    [SerializeField] private AudioSource attacksfx1;
+    [SerializeField] private AudioSource attacksfx2;
+    [SerializeField] private AudioSource attacksfx3;
+
     public Analog script;
 
 
@@ -41,16 +45,38 @@ public class PlayerCombatController : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-
+            
             enemy.GetComponent<EnemyDamage>().TakeDamage(attackDamage);
         }
 
         if (!isAttacking)
         {
             isAttacking = true;
+
             //script.speed = 0;
         }
       
+    }
+
+    private void atksfx1()
+    {
+       
+            attacksfx1.Play();
+        
+        
+    }
+
+    private void atksfx2()
+    {
+       
+            attacksfx2.Play();
+        
+    }
+    private void atksfx3()
+    {
+        
+            attacksfx3.Play();
+        
     }
 
     private void OnDrawGizmosSelected()
