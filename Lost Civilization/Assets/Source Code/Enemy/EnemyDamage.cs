@@ -35,6 +35,8 @@ public class EnemyDamage : MonoBehaviour
             // Instantiate(bloodSplash, transform.position, Quaternion.identity);
             Instantiate(effect, transform.position, Quaternion.identity);
             Wafat();
+
+            KillCount.instance.EnemyKilled();
         }
 
     }
